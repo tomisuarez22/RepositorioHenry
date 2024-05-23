@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Aprendiendo HTML</title>
 </head>
 <body>
 
     <header>
-        <h1>Aprendiendo HTML</h1>
-        <p><b>Ahora mismo esta sonando: Big Poppa (2007 Remaster).mp3</b></p>
-        <audio src="multimedia/Big Poppa (2007 Remaster).mp3" autoplay loop></audio>
+        <h1 class="title">Aprendiendo HTML</h1>
+        <p class="aclaration__text"><b>Ahora mismo esta sonando: Big Poppa (2007 Remaster).mp3</b></p>
+        <audio src="multimedia/Big Poppa (2007 Remaster).mp3" autoplay loop class="audio"></audio>
     </header>
     
     
@@ -19,77 +20,79 @@
     -->
 
     <main>
-        <section>
-            <article>
-                <h2>HEADERS EN HTML</h2>
-                <p>Los headers se utilizan para mencionar títulos dentro de nuestra página web. Semánticamente los headers tienen un orden que van del H1 AL H6 siendo el h1 el título principal, h2 subtitulo principal y asi sucesivamente en orden descendiente.</p>
+        <section class="section">
+            <article class="section__article">
+                <h2 class="section__title">HEADERS EN HTML</h2>
+                <p class="section__text">Los headers se utilizan para mencionar títulos dentro de nuestra página web. Semánticamente los headers tienen un orden que van del H1 AL H6 siendo el h1 el título principal, h2 subtitulo principal y asi sucesivamente en orden descendiente.</p>
             
-                <h3>Nota</h3>
-                <p>El H1 se utiliza una y solo UNA VEZ por página web, ya que semánticamente y por una cuestión de lógica y beneficio al motor de búsqueda solo puede haber UN TITULO PRINCIPAL. En este caso, el h1 sería "Aprendiendo HTML", mientras que el subtítulo "Headers en html" sería un h2 y esta nota adicional sería un h3.</p>
+                <h3 class="section__subtitle">Nota</h3>
+                <p class="section-subtitle__text">El H1 se utiliza una y solo UNA VEZ por página web, ya que semánticamente y por una cuestión de lógica y beneficio al motor de búsqueda solo puede haber UN TITULO PRINCIPAL. En este caso, el h1 sería "Aprendiendo HTML", mientras que el subtítulo "Headers en html" sería un h2 y esta nota adicional sería un h3.</p>
             </article>
             
         <!--
             TEMA: LISTAS EN HTML
         -->
-        <article>
-            <h2>Listas en HTML</h2>
-            <p>Existen 2 tipos de listas en HTML. Listas ordenadas y NO ordenadas<p>
-            <h3>Lista NO ordenada</h3>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+        <article class="section__article">
+            <h2 class="section__title">Listas en HTML</h2>
+            <p class="section__text">Existen 2 tipos de listas en HTML. Listas ordenadas y NO ordenadas<p>
+            <h3 class="section__subtitle">Lista NO ordenada</h3>
+            <ul class="section__list">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
             </ul>
-            <p>
+            <p class="section__text">
                 Como se ve, html coloca automáticamente los puntitos para determinar los items de la lista sin importar el orden.
             </p>
     
-            <h3>Lista ordenada</h3>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+            <h3 class="section__subtitle">Lista ordenada</h3>
+            <ol class="section__list">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
             </ol>
-            <p>
+            <p class="section__text">
                 A diferencia de la lista no ordenada, html coloca automáticamente los números dandolé asi un orden específico. 
             </p>
         </article>
         <!--
             TEMA: ENLACES
         -->
-        <article>    
-            <h2>Enlaces en HTML</h2>
+        <article class="section__article">    
+            <h2 class="section__title">Enlaces en HTML</h2>
     
-            <p>
+            <p class="section__text">
                 Los enlaces nos sirven para redirigir al usuario mediante un texto o imagen hacia un link en específico. Podemos utilizar este elemento para navegar entre distintos sectores de nuestra página web, otras páginas, etc.
             </p>    
     
-            <a href="https://www.google.com.ar" target="_blank" title="Google">Esto es un enlace!</a>
-            <h3>Ejemplo de enlace para navegar entre paginas:</h3>
+            <a href="https://www.google.com.ar" target="_blank" title="Google" class="section__link">Esto es un enlace!</a>
         </article>
 
-        <article>
-            <h2>Multimedia</h2>
-            <p>HTML nos permite ingresar cualquier tipo de multimedia que nosotros querramos. Podemos ingresar videos, audios, imagenes, gif, entre otras.</p>
+        <article class="section__article">
+            <h2 class="section__title">Multimedia</h2>
+            <p class="section__text">HTML nos permite ingresar cualquier tipo de multimedia que nosotros querramos. Podemos ingresar videos, audios, imagenes, gif, entre otras.</p>
 
-            <h2>Imagen</h2>
-            <img src="https://cdn-icons-png.flaticon.com/256/174/174854.png" alt="HTML ICONO" title="HTML">
-            <p>HTML, acrónimo en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado utilizado en la creación de páginas web. Este estándar que sirve de referencia del software que interactúa con la elaboración de páginas web en sus diferentes versiones.</p>
-
-            <h2>Video</h2>
-            <video src="/C3 - HTML/multimedia/Madonna - La Isla Bonita (Official Video).mp4" controls></video>
-            <p>«La isla bonita» es una canción interpretada por la cantante estadounidense Madonna, incluida en su tercer álbum de estudio, True Blue (1986). Fue publicada como el quinto y último sencillo del álbum el 25 de febrero de 1987 por la compañía discográfica Sire Records.</p>
-
-            <h2>Audio</h2>
-            <audio src="/C3 - HTML/multimedia/Big Poppa (2007 Remaster).mp3" controls></audio>
+            <div class="section__div">
+                <h2 class="section__subtitle">Imagen</h2>
+                <img src="https://cdn-icons-png.flaticon.com/256/174/174854.png" alt="HTML ICONO" title="HTML" class="section__image">
+                <p class="section-subtitle__text">HTML, acrónimo en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado utilizado en la creación de páginas web. Este estándar que sirve de referencia del software que interactúa con la elaboración de páginas web en sus diferentes versiones.</p>
+            </div>
+            
+            <div class="section__div">
+                <h2 class="section__subtitle">Video</h2>
+                <video src="/C3 - HTML/multimedia/Madonna - La Isla Bonita (Official Video).mp4" controls class="section__video"></video>
+                <p class="section-subtitle__text">«La isla bonita» es una canción interpretada por la cantante estadounidense Madonna, incluida en su tercer álbum de estudio, True Blue (1986). Fue publicada como el quinto y último sencillo del álbum el 25 de febrero de 1987 por la compañía discográfica Sire Records.</p>
+            </div>
+            
+            <div class="section__div">
+                <h2 class="section__subtitle">Audio</h2>
+                <audio src="/C3 - HTML/multimedia/Big Poppa (2007 Remaster).mp3" controls class="section__audio"></audio>
+            </div>
         </article>
         </section>
     </main>
-    <br>
-    <br>
-    <br>
     <footer>
-        @ Derechos reservados para Tomás Suarez - 2024
+        <h4 class="footer__title">@ Derechos reservados para Tomás Suarez - 2024</h4>
     </footer>
     
 </body>
